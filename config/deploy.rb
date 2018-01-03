@@ -5,3 +5,7 @@ task :after_update_code, :roles => do
   run "chmod u+x #{release_path}/script/spin"
 end
 
+#
+set: linked_files, %w{ config/secrets.yml }
+set: linktd_files, %w{ config/database.yml config/secrets.yml }
+
