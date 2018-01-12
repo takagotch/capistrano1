@@ -1,11 +1,15 @@
 gem 'dotenv-rails'
 
+gem 'rb-readline'
+
 group :development, :test do
   gem 'capistrano', '~> 3.2.1'
   gem 'capistrano-rails'
   gem 'capistrano-rbenv'
   gem 'capistrano-bundler'
   gem 'capistrano3-unicorn'
+
+  gem 'capistrano-rails-console'
 end
 
 group :production, :staging do
